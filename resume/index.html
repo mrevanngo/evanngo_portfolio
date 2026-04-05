@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>CV — EVAN_NGO</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../projects/index.html">Projects</a>
+            <a href="../cv/index.html">CV</a>
+            <a href="../contact/index.html">Contact</a>
+            <a href="https://github.com/mrevanngo" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+
+        <h1>Evan Ngo</h1>
+        <p>La Jolla, CA | <a href="mailto:mrevanngo@gmail.com">mrevanngo@gmail.com</a> | <a href="https://github.com/mrevanngo" target="_blank" rel="noopener noreferrer">github.com/mrevanngo</a> | <a href="https://linkedin.com/in/mr-evan-ngo" target="_blank" rel="noopener noreferrer">linkedin.com/in/mr-evan-ngo</a></p>
+
+        <section>
+            <h2>Education</h2>
+            <article>
+                <header>
+                    <h3>University of California, San Diego</h3>
+                    <p>La Jolla, CA</p>
+                </header>
+                <p>Bachelor of Science in Data Science — Expected <time datetime="2028-06">Jun. 2028</time></p>
+                <p>Relevant Coursework: Data Structures &amp; Algorithms, Applied Data Science, Database Management (SQL), Statistical Analysis</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> Python, SQL, Java, HTML</li>
+                <li><strong>Databases:</strong> PostgreSQL, SQLite</li>
+                <li><strong>Developer Tools:</strong> Git, VS Code, Jupyter Notebook, PyCharm, IntelliJ</li>
+                <li><strong>Libraries:</strong> pandas, NumPy, Plotly, Matplotlib, Seaborn, scikit-learn, SciPy, BeautifulSoup</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+
+            <article>
+                <header>
+                    <h3>Comeback Prediction in Professional Esports (League of Legends)</h3>
+                    <p>Python, scikit-learn, Plotly, pandas, Git</p>
+                    <p><a href="https://mrevanngo.github.io/LOL-statistical-analysis/" target="_blank" rel="noopener noreferrer">mrevanngo.github.io/LOL-statistical-analysis/</a></p>
+                </header>
+                <ul>
+                    <li>Built a Random Forest classification model to predict win-from-deficit ("comeback") outcomes using 150K+ professional esports match records and early-state features at a fixed timestamp.</li>
+                    <li>Cleaned and prepared large-scale match data; created a reproducible dataset with engineered features capturing resource/experience gaps, objective control, and engagement efficiency.</li>
+                    <li>Addressed class imbalance (~16%) by optimizing for F1-score, applying class_weight, and tuning hyperparameters using GridSearchCV (k-fold cross-validation).</li>
+                    <li>Improved F1-score by 347% over baseline Decision Tree model through feature engineering and model selection; communicated tradeoffs using precision/recall rather than accuracy.</li>
+                    <li>Validated statistical claims using permutation testing and evaluated fairness across regions to confirm no meaningful performance disparity across cohorts.</li>
+                </ul>
+            </article>
+
+            <article>
+                <header>
+                    <h3>STEM Degree Distribution &amp; Socioeconomic Analysis (COGS 108, Team of 4)</h3>
+                    <p>Python, pandas, SciPy</p>
+                    <p><a href="https://github.com/mrevanngo/STEM-Degree-Analysis" target="_blank" rel="noopener noreferrer">github.com/mrevanngo/STEM-Degree-Analysis</a></p>
+                </header>
+                <ul>
+                    <li>Analyzed College Scorecard dataset (6,000+ institutions) to investigate relationship between low-income student enrollment (Pell Grant %) and STEM degree share at U.S. public colleges.</li>
+                    <li>Conducted correlation analysis revealing statistically significant negative relationship (r = -0.107, p = 0.009) between low-income enrollment and STEM degree share.</li>
+                    <li>Cleaned and aggregated multi-dimensional educational data, filtering to 595 bachelor's-granting institutions and creating composite STEM metrics from 7 CIP code categories.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Leadership &amp; Involvement</h2>
+
+            <article>
+                <header>
+                    <h3>Culture Art Technology Presentation – Team Lead</h3>
+                    <p>UCSD CAT 3 | <time datetime="2025-03">Mar. 2025</time> – <time datetime="2025-06">Jun. 2025</time></p>
+                </header>
+                <ul>
+                    <li>Led a 4-person team to design and launch a project website and deliver a "survival guide".</li>
+                    <li>Presented to 30 students and 2 professors.</li>
+                    <li>Owned project coordination (task delegation, timeline, final pitch) and communicated design decisions clearly to a mixed technical/non-technical audience.</li>
+                </ul>
+            </article>
+
+            <article>
+                <header>
+                    <h3>Key Club – Vice President of Communications</h3>
+                    <p>Arroyo High School | <time datetime="2022-08">Aug. 2022</time> – <time datetime="2024-06">Jun. 2024</time></p>
+                </header>
+                <ul>
+                    <li>Coordinated volunteer operations across multiple large community events, supporting 200+ service hours while managing sign-ups, attendance tracking, and event logistics.</li>
+                    <li>Built and maintained Google Forms workflows for event registration; streamlined communication by organizing group chats and sending pre-event briefings to 100s of participants.</li>
+                </ul>
+            </article>
+        </section>
+
+    </body>
+</html>
