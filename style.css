@@ -1,5 +1,5 @@
 :root {
-  --color-accent: oklch(65% 50% 0);
+  --color-accent: #e05a00;
 }
 
 body {
@@ -10,7 +10,6 @@ body {
   max-width: 100ch;
   margin-inline: max(1em, (100% - 100ch) / 2);
   accent-color: var(--color-accent);
-  background-color: oklch(95% 5% 0);
 }
 
 img {
@@ -40,4 +39,5 @@ nav a.current {
 nav a:hover {
   border-bottom: 0.4em solid var(--color-accent);
   padding-bottom: 0.1em;
+  background-color: #fdf3ee;
 }
