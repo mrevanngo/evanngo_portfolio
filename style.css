@@ -12,14 +12,6 @@ img {
 }
 
 /* Navigation */
-nav > ul {
-  display: contents;
-}
-
-nav > ul > li {
-  display: contents;
-}
-
 nav {
   display: flex;
   margin-bottom: 2em;
