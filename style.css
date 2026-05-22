@@ -343,6 +343,10 @@ circle {
   transition: 200ms;
   transform-origin: center;
   transform-box: fill-box;
+
+  @starting-style {
+    r: 0;
+  }
 }
 
 circle:hover {
@@ -360,6 +364,98 @@ circle.selected {
 
 .gridlines path {
   display: none;
+}
+
+/* Time slider */
+#slider-container {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  margin-block: 1em;
+}
+
+#slider-container label {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  gap: 0.5em;
+}
+
+#slider-container input[type='range'] {
+  flex: 1;
+}
+
+#slider-container time {
+  margin-left: auto;
+  font-size: 0.9rem;
+  color: color-mix(in oklch, CanvasText, Canvas 30%);
+}
+
+/* Scrollytelling layout */
+#scrolly-1 {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+
+  > * {
+    flex: 1;
+  }
+}
+
+#scatter-story {
+  position: relative;
+}
+
+#scatter-plot {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  height: 50vh;
+  overflow: visible;
+}
+
+.step {
+  padding-bottom: 4rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* File unit visualization */
+#files {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin-block: 2em;
+
+  > div {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: subgrid;
+  }
+
+  dt {
+    grid-column: 1;
+    font-size: 0.85rem;
+    padding-block: 0.4em;
+  }
+
+  dd {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    align-content: start;
+    gap: 0.15em;
+    padding-top: 0.6em;
+    margin-left: 0;
+  }
+}
+
+.loc {
+  width: 0.5em;
+  aspect-ratio: 1;
+  background: var(--color);
+  border-radius: 50%;
 }
 
 /* Brush selection rectangle */
