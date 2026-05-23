@@ -421,6 +421,31 @@ circle.selected {
   line-height: 1.6;
 }
 
+/* Scrollytelling section 2 (file unit viz) */
+#scrolly-2 {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  margin-top: 3em;
+
+  > * {
+    flex: 1;
+  }
+}
+
+#files-story {
+  position: relative;
+}
+
+#files-plot {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  height: 50vh;
+  overflow-y: auto;
+}
+
 /* File unit visualization */
 #files {
   display: grid;

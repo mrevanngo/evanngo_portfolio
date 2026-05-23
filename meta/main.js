@@ -316,7 +316,6 @@ function onTimeSliderChange() {
   });
   filteredCommits = commits.filter((d) => d.datetime <= commitMaxTime);
   updateScatterPlot(data, filteredCommits);
-  updateFileDisplay(filteredCommits);
 }
 
 document.getElementById('commit-progress').addEventListener('input', onTimeSliderChange);
@@ -347,7 +346,6 @@ function onStepEnter(response) {
   commitMaxTime = commit.datetime;
   filteredCommits = commits.filter((d) => d.datetime <= commitMaxTime);
   updateScatterPlot(data, filteredCommits);
-  updateFileDisplay(filteredCommits);
 }
 
 const scroller = scrollama();
@@ -357,3 +355,35 @@ scroller
     step: '#scrolly-1 .step',
   })
   .onStepEnter(onStepEnter);
+
+d3.select('#files-story')
+  .selectAll('.step')
+  .data(commits)
+  .join('div')
+  .attr('class', 'step')
+  .html(
+    (d, i) => `
+      On ${d.datetime.toLocaleString('en', { dateStyle: 'full', timeStyle: 'short' })},
+      I made <a href="${d.url}" target="_blank">${
+        i > 0 ? 'another glorious commit' : 'my first commit, and it was glorious'
+      }</a>.
+      I edited ${d.totalLines} lines across ${
+        d3.rollups(d.lines, (D) => D.length, (d) => d.file).length
+      } files.
+      Then I looked over all I had made, and I saw that it was very good.
+    `,
+  );
+
+function onStepEnter2(response) {
+  const commit = response.element.__data__;
+  const filtered = commits.filter((d) => d.datetime <= commit.datetime);
+  updateFileDisplay(filtered);
+}
+
+const scroller2 = scrollama();
+scroller2
+  .setup({
+    container: '#scrolly-2',
+    step: '#scrolly-2 .step',
+  })
+  .onStepEnter(onStepEnter2);
