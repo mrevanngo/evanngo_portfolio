@@ -1,5 +1,12 @@
 [
     {
+        "title": "U.S. Commercial Fisheries Landings Trend Analysis",
+        "year": "2026",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Built an end-to-end PostgreSQL pipeline ingesting 159K+ commercial landing records (1950–2024) from the NOAA FOSS REST API across 25 states and 1,042 species. Designed the analytical layer in SQL using window functions, CTE chains, and Postgres regression aggregates to fit log-linear trends per species and rank state revenue exposure to declining stocks.",
+        "url": "https://github.com/mrevanngo/noaa-fisheries-trends"
+    },
+    {
         "title": "Bikewatching",
         "year": "2026",
         "image": "../images/bike_watching.png",
@@ -7,8 +14,15 @@
         "url": "https://mrevanngo.github.io/bikewatching/"
     },
     {
+        "title": "HydraMate – Smart Hydration Coaster",
+        "year": "2026",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Led a 12-person team to build a smart water coaster that tracks fluid intake in milliliters via a load cell and HX711 amplifier, architecting the full data pipeline across an ESP32 microcontroller, Firebase, and a React Native app.",
+        "url": "https://github.com/mrevanngo/HydraMate"
+    },
+    {
         "title": "Comeback Prediction in Professional Esports (League of Legends)",
-        "year": "2024",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Built a Random Forest classification model to predict win-from-deficit outcomes using 150K+ professional esports match records. Improved F1-score by 347% over baseline through feature engineering and model selection.",
         "url": "https://mrevanngo.github.io/LOL-statistical-analysis/"
@@ -21,58 +35,10 @@
         "url": "https://github.com/mrevanngo/STEM-Degree-Analysis"
     },
     {
-        "title": "Ultra-Processed Foods Cost 7% Less Per Item Than Minimally Processed Ones",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Designed a static violin-boxplot visualization exploring price differences across NOVA food processing classes using a dataset of 50,000+ items from Walmart, Target, and Whole Foods. Found that ultra-processed foods (Class 3) have a median price of $3.69 vs $3.98 for minimally processed foods (Class 0), a 7% difference. Prices capped at the 99th percentile to remove bulk/multi-pack outliers."
-    },
-    {
-        "title": "Force vs. Abuse of Authority: Visualizing CCRB Complaint Substantiation Rates",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Designed two opposing persuasive visualizations around the proposition that force-related NYPD allegations are less likely to be substantiated than abuse of authority complaints. The supporting view used a smoothed time-series and grouped bar chart showing lower substantiation rates for force (12.78% vs 30.42%). The opposing view reframed the data by total case counts, showing force allegations still represent a significant share of validated complaints."
-    },
-    {
         "title": "DSC 106 Personal Portfolio Website",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Designed and built a personal portfolio website from scratch using HTML, CSS, and JavaScript as part of DSC 106. Features a responsive layout, dark/light mode toggle, and dynamically rendered project cards from JSON data."
-    },
-    {
-        "title": "SQL Music Library Database",
-        "year": "2023",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Designed a normalized relational database schema in PostgreSQL to manage a music library with artists, albums, tracks, and playlists. Wrote complex queries for genre analytics and listening history aggregation."
-    },
-    {
-        "title": "COVID-19 Vaccination Rate Visualization",
-        "year": "2023",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Created an interactive choropleth map using Plotly and pandas to visualize U.S. county-level COVID-19 vaccination rates over time, with filtering by state and dose type."
-    },
-    {
-        "title": "Penguin Species Classifier",
-        "year": "2023",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Trained a multiclass classification model on the Palmer Penguins dataset to distinguish species by morphological features. Compared logistic regression, KNN, and decision tree performance using cross-validation."
-    },
-    {
-        "title": "Key Club Volunteer Tracking System",
-        "year": "2022",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Built and maintained a Google Forms and Sheets workflow to track volunteer sign-ups and service hours for 100+ members across multiple community events at Arroyo High School."
-    },
-    {
-        "title": "Housing Price Regression Analysis",
-        "year": "2024",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Performed exploratory data analysis and built multiple linear regression models to predict housing prices using the Ames Housing dataset. Applied feature selection, log transforms, and regularization techniques."
-    },
-    {
-        "title": "Web Scraper for Conservation News",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Built a Python web scraper using BeautifulSoup to collect and aggregate news headlines related to wildlife conservation from multiple sources, storing results in a SQLite database for trend analysis."
     },
     {
         "title": "CAT 3 Survival Guide Website",
