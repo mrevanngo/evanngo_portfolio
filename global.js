@@ -10,7 +10,7 @@ export function renderProjects(projects, containerElement, headingLevel = 'h2') 
       : `<${headingLevel}>${project.title}</${headingLevel}>`;
     article.innerHTML = `
       ${titleHTML}
-      <img src="${project.image}" alt="${project.title}">
+      <img src="${project.image.startsWith('http') ? project.image : BASE_PATH + project.image}" alt="${project.title}">
       <div>
         <p>${project.description}</p>
         <p class="project-year">${project.year}</p>

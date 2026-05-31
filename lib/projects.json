@@ -9,7 +9,7 @@
     {
         "title": "Bikewatching",
         "year": "2026",
-        "image": "../images/bike_watching.png",
+        "image": "images/bike_watching.png",
         "description": "Built an interactive Mapbox GL JS visualization of Boston bike traffic data, showing station activity, trip flows, and ridership patterns across the city's Bluebikes network.",
         "url": "https://mrevanngo.github.io/bikewatching/"
     },
