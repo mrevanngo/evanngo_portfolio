@@ -35,12 +35,6 @@
         "url": "https://github.com/mrevanngo/STEM-Degree-Analysis"
     },
     {
-        "title": "DSC 106 Personal Portfolio Website",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Designed and built a personal portfolio website from scratch using HTML, CSS, and JavaScript as part of DSC 106. Features a responsive layout, dark/light mode toggle, and dynamically rendered project cards from JSON data."
-    },
-    {
         "title": "CAT 3 Survival Guide Website",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
