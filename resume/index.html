@@ -24,16 +24,6 @@
         </section>
 
         <section>
-            <h2>Technical Skills</h2>
-            <ul>
-                <li><strong>Languages:</strong> Python, SQL, Java, HTML</li>
-                <li><strong>Libraries:</strong> pandas, NumPy, scikit-learn, Plotly, Matplotlib, Seaborn, SciPy, BeautifulSoup, NLTK, TextBlob</li>
-                <li><strong>Databases:</strong> PostgreSQL, SQLite</li>
-                <li><strong>Developer Tools:</strong> Git, Jupyter Notebook, VS Code, PyCharm, IntelliJ</li>
-            </ul>
-        </section>
-
-        <section>
             <h2>Experience</h2>
 
             <article>
@@ -73,9 +63,9 @@
                 </header>
                 <p style="margin: 0 0 0.25em; color: #666; font-size: 0.9rem;">PostgreSQL, Python, Streamlit, Plotly &nbsp;·&nbsp; <a href="https://github.com/mrevanngo/noaa-fisheries-trends" target="_blank" rel="noopener noreferrer">github.com/mrevanngo/noaa-fisheries-trends</a></p>
                 <ul>
-                    <li>Built an end-to-end PostgreSQL pipeline ingesting 159K+ commercial landing records (1950–2024) from the NOAA FOSS REST API across 25 states and 1,042 species, with raw-then-clean staging that preserves confidentiality-withheld values as NULL rather than zero.</li>
-                    <li>Designed the analytical layer entirely in SQL using window functions (LAG for year-over-year), CTE chains, and Postgres regression aggregates (regr_slope, regr_r2) to fit log-linear trends per species and rank state revenue exposure to declining stocks.</li>
-                    <li>Surfaced multi-decade decline signals matching real-world managed stocks (Atlantic alewife at -12.3%/yr, Pacific bluefin tuna at -7.7%/yr) and quantified Hawaii's 28% commercial revenue exposure to declining species vs. Alaska's near-zero, validating the method against known fisheries-management outcomes.</li>
+                    <li>Built an end-to-end PostgreSQL pipeline ingesting 159K+ commercial landing records (1950–2024) from the NOAA FOSS REST API, with raw-then-clean staging that preserves confidentiality-withheld values as NULL.</li>
+                    <li>Designed the analytical layer in SQL using window functions, CTE chains, and Postgres regression aggregates (regr_slope, regr_r2) to fit log-linear trends per species and rank state revenue exposure.</li>
+                    <li>Surfaced multi-decade decline signals matching real-world managed stocks (alewife -12.3%/yr, Pacific bluefin -7.7%/yr) and quantified Hawaii's 28% revenue exposure to declining species vs. Alaska's near-zero.</li>
                 </ul>
             </article>
 
@@ -87,7 +77,7 @@
                 <p style="margin: 0 0 0.25em; color: #666; font-size: 0.9rem;">Python, scikit-learn, Plotly, pandas, Git &nbsp;·&nbsp; <a href="https://mrevanngo.github.io/LOL-statistical-analysis/" target="_blank" rel="noopener noreferrer">mrevanngo.github.io/LOL-statistical-analysis/</a></p>
                 <ul>
                     <li>Built a Random Forest classification model to predict win-from-deficit outcomes using 150K+ professional esports match records and early-state features at a fixed game timestamp.</li>
-                    <li>Cleaned and prepared large-scale match data and engineered features capturing resource/experience gaps, objective control, and engagement efficiency; addressed class imbalance (~16%) by optimizing for F1-score with class weight and GridSearchCV tuning.</li>
+                    <li>Engineered features capturing resource/experience gaps and objective control; addressed class imbalance (~16%) by optimizing for F1-score with class weight and GridSearchCV tuning.</li>
                     <li>Improved F1-score by 347% over baseline Decision Tree through feature engineering and model selection; communicated tradeoffs using precision/recall rather than accuracy.</li>
                 </ul>
             </article>
@@ -101,9 +91,19 @@
                 <ul>
                     <li>Led a 12-person team to build a smart water coaster that tracks fluid intake in milliliters via a load cell and HX711 amplifier, architecting the full data pipeline across an ESP32 microcontroller, Firebase, and a React Native app.</li>
                     <li>Implemented the end-to-end device-to-app connection by integrating ESP32 Bluetooth pairing with Firebase real-time sync, enabling live weight updates and hydration status to surface instantly in the mobile interface.</li>
-                    <li>Resolved hardware-software integration issues by debugging the Arduino IDE sketch and calibrating the load cell scale factor, validating LED feedback states (blue on drink detection, red when dehydrated, green when on target) and stabilizing the Bluetooth connection.</li>
+                    <li>Resolved hardware-software integration issues by debugging the Arduino IDE sketch, calibrating the load cell scale factor, and validating LED feedback states for drink detection and hydration status.</li>
                 </ul>
             </article>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Languages:</strong> Python, SQL, Java, HTML</li>
+                <li><strong>Libraries:</strong> pandas, NumPy, scikit-learn, Plotly, Matplotlib, Seaborn, SciPy, BeautifulSoup, NLTK, TextBlob</li>
+                <li><strong>Databases:</strong> PostgreSQL, SQLite</li>
+                <li><strong>Developer Tools:</strong> Git, Jupyter Notebook, VS Code, PyCharm, IntelliJ</li>
+            </ul>
         </section>
 
     </body>

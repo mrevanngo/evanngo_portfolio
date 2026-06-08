@@ -3,7 +3,7 @@
         "title": "U.S. Commercial Fisheries Landings Trend Analysis",
         "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Built an end-to-end PostgreSQL pipeline ingesting 159K+ commercial landing records (1950–2024) from the NOAA FOSS REST API across 25 states and 1,042 species. Designed the analytical layer in SQL using window functions, CTE chains, and Postgres regression aggregates to fit log-linear trends per species and rank state revenue exposure to declining stocks.",
+        "description": "Built an end-to-end PostgreSQL pipeline ingesting 159K+ commercial landing records (1950–2024) from the NOAA FOSS REST API. Designed the analytical layer in SQL using window functions, CTE chains, and Postgres regression aggregates to surface multi-decade decline signals and rank state revenue exposure to declining stocks.",
         "url": "https://github.com/mrevanngo/noaa-fisheries-trends"
     },
     {
@@ -17,14 +17,14 @@
         "title": "HydraMate – Smart Hydration Coaster",
         "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Led a 12-person team to build a smart water coaster that tracks fluid intake in milliliters via a load cell and HX711 amplifier, architecting the full data pipeline across an ESP32 microcontroller, Firebase, and a React Native app.",
+        "description": "Led a 12-person team to build a smart water coaster that tracks fluid intake via a load cell and HX711 amplifier, architecting the full data pipeline across an ESP32 microcontroller, Firebase, and a React Native app. Implemented ESP32 Bluetooth pairing with Firebase real-time sync for live hydration status updates.",
         "url": "https://github.com/mrevanngo/HydraMate"
     },
     {
         "title": "Comeback Prediction in Professional Esports (League of Legends)",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Built a Random Forest classification model to predict win-from-deficit outcomes using 150K+ professional esports match records. Improved F1-score by 347% over baseline through feature engineering and model selection.",
+        "description": "Built a Random Forest classification model to predict win-from-deficit outcomes using 150K+ professional esports match records. Engineered features capturing resource/experience gaps and objective control; improved F1-score by 347% over baseline through feature engineering and model selection.",
         "url": "https://mrevanngo.github.io/LOL-statistical-analysis/"
     },
     {
